@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #4a148c;
+  margin-bottom: 20px;
+}
+
+/* Piggy Bank Display */
+.piggy-bank {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.piggy-bank h2 {
+  font-size: 1.8rem;
+  color: #4a148c;
+  margin-bottom: 10px;
+}
+
+.piggy-bank img {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: -30px;
+  right: 20px;
+}
+
+/* Add Money Section */
+.add-money {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-money input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #4a148c;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.add-money input:focus {
+  border-color: #e91e63;
+}
+
+.add-money button {
+  background: #4a148c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.add-money button:hover {
+  background: #e91e63;
+  transform: scale(1.05);
+}
+
+/* Transactions List */
+.transactions {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.transactions h3 {
+  font-size: 1.5rem;
+  color: #4a148c;
+  margin-bottom: 15px;
+}
+
+.transactions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.transactions li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.transactions li:last-child {
+  border-bottom: none;
+}
+
+.transactions li span {
+  font-size: 1rem;
+}
+
+/* Break and New Piggy Bank Buttons */
+.break-piggy-bank button,
+.new-piggy-bank button {
+  background: #4a148c;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+  margin: 10px 0;
+}
+
+.break-piggy-bank button:hover,
+.new-piggy-bank button:hover {
+  background: #e91e63;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .add-money {
+    flex-direction: column;
+  }
+
+  .add-money input,
+  .add-money button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
